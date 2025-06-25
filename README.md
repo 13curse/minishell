@@ -40,6 +40,7 @@ Clone the repository:
 
 ``` bash ```
 ``` git clone <your-repository-url> ```
+
 ``` cd minishell ```
 
 Build the project:

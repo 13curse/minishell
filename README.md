@@ -1,4 +1,4 @@
-### minishell
+### minishell 🐚​
 
 This project is all about recreating your own **(mini)shell**, taking Bash as a reference.
 The goal is to implement a **command-line interpreter** with core functionalities similar to those found in Bash.

@@ -27,6 +27,7 @@ The goal is to implement a **command-line interpreter** with core functionalitie
 ## Getting Started
 
 **Prerequisites**
+
 • C compiler (e.g., gcc or clang)
 
 • Make
@@ -60,6 +61,7 @@ bash
 • Use Ctrl-C to interrupt a command, Ctrl-D to exit the shell.
 
 ## Custom readline
+
 We have recoded a simplified version of the readline library to handle command input, including:
 
 • Command line editing
@@ -69,6 +71,7 @@ We have recoded a simplified version of the readline library to handle command i
 • Basic line editing features
 
 ## Bonus Features
+
 Logical operators:
 
 • command1 && command2 — execute command2 only if command1 succeeds.

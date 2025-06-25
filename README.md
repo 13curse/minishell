@@ -25,6 +25,7 @@ The goal is to implement a **command-line interpreter** with core functionalitie
 **Logical operators:** Support for && (AND) and || (OR) between commands.
 
 ## Getting Started
+
 **Prerequisites**
 • C compiler (e.g., gcc or clang)
 
@@ -33,6 +34,7 @@ The goal is to implement a **command-line interpreter** with core functionalitie
 • Readline library (for the original version, but our custom readline is used here)
 
 **Installation**
+
 Clone the repository:
 
 bash
@@ -48,6 +50,7 @@ bash
 ./minishell
 
 **Usage**
+
 • Enter commands as you would in Bash.
 
 • Use pipes, redirections, and logical operators.

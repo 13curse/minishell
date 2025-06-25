@@ -1,0 +1,41 @@
+// ctrl+d qui bloque l'input (jahnjkh CTRL+D impossible de supprimer)
+// ctrl+d qui n'exit pas apres ctrl+c
+
+// signaux dans le mode interactif
+
+// exit qui ne doit pas dépasser la taille d'un long long (faire atoll du modulo)
+
+// réparer le ctrl+d avec le raw mode 
+
+// corriger les ertreurs builtins / faire le tester
+
+// finir la gestion d'erreur d'une ligne trop grande dans l'historique
+// (la ligne reste figée dans l'historique dès lors qu'on
+// navigue avec les flèches, A FIXER)
+
+// mettre un index dans la struct pour savoir ou j'ecris dans le buffer
+// et realloc uniquement si l'index rattrape la size
+// (etre sur de ne pas écrire plus loin que la size)
+
+
+CTRL+C pdt heredoc segfault -> separer read_user_input en 2, pour interactif et heredoc
+ctrl+D lors d'une saise permet d'effacer un char de trop
+- ctrl+D qui exit meme si ligne avec caractere (non fidele au bash)
+retirer || et && de tte gestions d'err et autre
+// fix le pb du terminal qui affiche plus STDIN qd ctrl+D apres ctrl+C (apres avoir quitté minishell)
+
+// CTRL+\ qui agit comme un ctrl+c
+
+(rajout ligne 28 redirections2.c pour fix un pb lorsque
+la commande est uniquement des tab /t; (valeur non init))
+
+CTRL+D qui quitte meme si ligne de texte écrite
+
+// GERER LE CURSEUR POUR LEFFACEMENT DE TOUTE UNE LIGNE RECUPEREE
+// DE LHISTORIQUE (sarah)
+// CTRL+\ qui agit comme un ctrl+c
+
+faire le ctrl+\ (pas en raw mode) -> quitte et core dump
+echo $? = 131
+
+nb maximal de heredoc ne se reinitialise pas

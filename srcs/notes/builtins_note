@@ -1,0 +1,58 @@
+`EXPORT:
+
+• Si input = export
+	affiche toutes les clés de env précédées de "declare -x" même celles dont la valeur est vide dans L'ORDRE ASCII (A-Z puis a-z)
+
+• Si input = export "invalide" (ici export abc:)
+	affiche: bash: export: `abc:': not a valid identifier
+
+`• Si input = export "entrée valide sans valeur" (ici export yyyyy)
+	rajoute la clé à la liste des export mais pas à la liste des env
+
+• Si input = export "entrée valide avec =" (ici export sarah=)
+	rajoute la clé à la liste des export ET à la liste de l'env avec comme valeur "" (EXPORT = sarah="" | ENV = sarah=)
+
+• Si input = export "entrée valide avec clé + valeur" (ici export sarah=sbehar)
+	rajoute la clé et sa valeur à la liste des export et à la liste de l'env
+
+⚠ dans l'export la valeur d'une clé est entre double quotes "" contrairement à l'env. ⚠
+
+- nom de variables que lettres, chiffre ou underscore et 
+peut pas commencer par chiffre
+
+- multi export(export coucou=5 salut=3)
+
+- append += :
+
+export sbehar=12
+export "sbehar+=3"
+
+sbehar = 123
+
+EXIT:
+
+check pourquoi le msg d'erreur si exit iqhewuiqwehei ne s'affiche pas
+
+si le premier argument est un nombre unique et qu'il y a plusieurs
+arguments derriere on exit pas
+
+
+CD: 
+
+- cd ~ / cd -> home
+- cd - -> oldpwd
+- cd / -> à la racine 
+- cd .. / un dossier avant dans l'arborescence
+
+ECHO:
+
+- gérer echo $variable d'ENV
+si la variable existe (ex: echo $PATH -> on renvoie le path)
+si la variable n'existe pas (ex: echo $PATHWJQ -> on renvoie un '\n')
+si la variable n'existe pas mais qu'il y a un argument derrière 
+(ex: echo $PATHhqwuheq ?weee -> on renvoie le second argument ici ?weee)
+
+- gérer le multi echo $variable d'ENV
+ex: echo $PATH $OLDPWD -> retourne le path et l'oldpwd
+
+- gérer echo $? -> dernier code d'erreur

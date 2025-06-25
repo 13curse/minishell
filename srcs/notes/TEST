@@ -1,0 +1,15 @@
+• ERROR OR CRASH
+- cat | cat | ls not same as bash
+
+
+
+
+
+
+• DIFFERENT OUTPUT THAN BASH
+- test 402 (mini = cd: no such file or directory)
+(bash = cd: /minishell: no such file or directory)
+- test 414 -> not same action as bash
+
+
+

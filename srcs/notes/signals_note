@@ -1,0 +1,36 @@
+CTRL-\:
+
+minishell$ ^\[1]    29625 quit (core dumped)  ./a.out
+handle this to avoid the seg fault
+
+CTRL-C:
+
+give back the prompt
+
+CTRL-D:
+
+exit the shell (echo $? = 0) ONLY if the line is EMPTY
+
+
+
+- we use a global variable to detect if a signal is called
+volatile sig_atomic_t g_sigint_received = 0 if no signal, = 1 if yes
+
+
+HISTORY:
+
+Les flèches renvoient des séquences, il faut donc lire les caractères un par un 
+pour les détecter
+
+Haut : \x1b[A
+Bas : \x1b[B
+
+termios: structure qui contient tout les paramètres du terminal
+
+ioctl: récupère la largeur du terminal
+
+tcgetattr : récupère les param actuels du term
+
+c_lflag : local flags, on désactive le mode canonique et l'écho (pour pouvoir nous même gérer l'edition de ligne et l'historique)
+
+tcsetattr : applique de nv param au term (TCSAFLUSH option qui applique les changements + supprime l'input non lu)

@@ -38,17 +38,19 @@ The goal is to implement a **command-line interpreter** with core functionalitie
 
 Clone the repository:
 
-bash
-git clone <your-repository-url>
-cd minishell
+``` bash ```
+``` git clone <your-repository-url> ```
+``` cd minishell ```
+
 Build the project:
 
-bash
-make
+``` bash ```
+``` make ```
+
 Run minishell:
 
-bash
-./minishell
+``` bash ```
+``` ./minishell ```
 
 **Usage**
 

@@ -46,6 +46,8 @@ Build the project:
 
 ``` make ```
 
+``` make re ```
+
 Run minishell:
 
 ``` ./minishell ```

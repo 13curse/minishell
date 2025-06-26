@@ -46,6 +46,8 @@ Build the project:
 
 ``` make ```
 
+**Or**
+
 ``` make re ```
 
 Run minishell:
